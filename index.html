@@ -9,6 +9,7 @@
     <meta name="author" content="Марк Литвак" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
     <script src="vendor/js/jquery-3.3.1.slim.min.js" defer></script>
     <script src="vendor/js/popper.min.js" async></script>
     <link rel="stylesheet" href="vendor/css/bootstrap.min.css" />
@@ -70,6 +71,7 @@
         </ul>
       </div>
     </nav>
+
     <section id="Расписание">
       <div class="container">
         <div class="row">
@@ -143,7 +145,7 @@
         <div class="row">
           <iframe
             src="https://lichess.org/tv/frame?theme=blue&bg=light"
-            style="margin: 10px; height: 444px"
+            style="margin: 10px; height: 400px"
             allowtransparency="true"
             frameborder="0"
             >Loading LichessTV...</iframe
@@ -151,5 +153,133 @@
         </div>
       </div>
     </section>
+
+    <section id="problems">
+      <div class="container">
+        <div class="row">
+          <h2>Задачи недели</h2>
+        </div>
+        <div class="row">
+          <p>Подумайте, как в этих ситуациях белые или черные добьются победы или материального превосходства?</p>
+          <p><i>(нажмите на картинку!)</i></p>
+        </div>
+        <div class="row">
+          ----
+        </div>
+      </div>
+    </section>
+
+    <section id="challenge">
+      <div class="container">
+        <div class="row">
+          <h2>Конкурс</h2>
+        </div>
+        <div class="row">
+          <strong id="countdown"></strong>
+        </div>
+      </div>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcgTPpCg-2MRg_3WH3VChhqgnM8es6GZiKnvACDbw5U2zl-w/viewform?embedded=true" width=100% height=600px frameborder="0" marginheight=auto marginwidth=auto>Загрузка формы…</iframe>
+      <script>
+      var countDownDate = new Date("Sep 10, 2022 23:59:59").getTime();
+      var x = setInterval(function() {
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "Конкурс завершен";
+        }
+      }, 1000);
+      </script>
+      </div>
+    </section>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Смотрите наши соцсети:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://vk.com/gnesinchess" class="me-4 link-secondary">
+        <i class="fab fa-vk"></i> @gnesinchess
+      </a>
+      <a href="https://instagram.com/mark_litvak_muz" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i> @mark_litvak_muz
+      </a>
+      <a href="https://t.me/chess_gnes" class="me-4 link-secondary">
+        <i class="fab fa-telegram"></i> @chess_gnes
+      </a>
+      <a href="https://github.com/marklitvak/gnesinchess_2022" class="me-4 link-secondary">
+        <i class="fab fa-github"></i> Github repo
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section>
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <h3><i class="fas fa-chess-board"></i> Gnesin Chess</h3>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Контакты</h6>
+          <p>
+            <i class="fa fa-home me-3 text-secondary"></i> 
+            <a href="https://yandex.ru/maps/213/moscow/house/povarskaya_ulitsa_30_36s3/Z04Ycw5iSEIAQFtvfXt0dH9iZg==">121069 г. Москва ул. Поварская д. 30-36</a>
+          </p>
+          <p><i class="fa fa-phone me-3 text-secondary"></i> +7 916 3767773</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+</footer>
+<!-- Footer -->
   </body>
 </html>
