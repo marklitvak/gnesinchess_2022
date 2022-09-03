@@ -1,2 +1,4 @@
-# gnesinchess_2022
-New version
+GnesinChess
+
+Новая версия
+Здесь нет ненужных анимаций, переходов и тп
