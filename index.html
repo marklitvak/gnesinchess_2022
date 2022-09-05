@@ -1,281 +1,137 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Шахматный клуб GnesinChess. Еженедельные турниры (онлайн и оффлайн), интересные статьи, партии мастеров в реальном времени и задачи."
-    />
-    <meta name="author" content="Марк Литвак" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
-    <link rel="shortcut icon" href="images/logohead.ico" />
-    <title>Gnesin Chess</title>
-  </head>
-  <body>
-    <nav
-      class="navbar"
-      style="background-color: #238dd9"
-    >
-      <a class="navbar-logo" href="#"
-        ><img class="img-responsive" src="images/logo.png" alt="logo"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Главная <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdownMenuLink"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Меню
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#schedule">Расписание</a>
-              <a class="dropdown-item" href="#lichesstv">LichessTV</a>
-              <a class="dropdown-item" href="#problems">Задачи</a>
-              <a class="dropdown-item" href="#challenge">Конкурс</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="blog.html">Блог</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="faq.html">FAQ</a>
-          </li>
-        </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/logohead.ico">
+  <script defer="" src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+  <meta name="description" content="Шахматный клуб GnesinChess. Еженедельные турниры (онлайн и оффлайн), интересные статьи, партии мастеров в реальном времени и задачи.">
+  <meta name="author" content="Марк Литвак">
+  <title>Gnesin Chess</title>
+</head>
+<body>
+  <section id="schedule">
+    <div class="row">
+      <div class="text-center">
+        <h2>Расписание игр</h2>
       </div>
-    </nav>
-
-    <section id="Расписание">
-      <div class="container">
-        <div class="row">
-          <div class="text-center col-sm-8 col-sm-offset-2">
-            <h2>Расписание игр</h2>
-          </div>
-        </div>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Название</th>
-              <th>Дата и время</th>
-              <th>Место</th>
-              <th>Особенности</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Открытие сезона 2022-23</td>
-              <td>1.09.22 (ЧТ)<br />20:00-23:00</td>
-              <td class="online">
-                <a href="https://lichess.org/tournament/3dY4Vzb8"
-                  >Lichess (online)</a
-                >
-              </td>
-              <td>
-                <b>Как подключиться:</b><br />1) Войти/Зарегистрироваться на
-                сайте <a href="https://lichess.com">Lichess</a><br />2) Перейти
-                по ссылке Lichess (online) и нажать зелёную кнопку "Участвовать"
-                (в приложении - треугольник справа внизу экрана)<br />3) Ждать,
-                пока начнется партия. Если вдруг видите слева от своего Ника
-                флажок/значок паузы (Twix), нажмите "Участвовать" (п.2)
-              </td>
-            </tr>
-            <tr>
-              <td>Crazy BD</td>
-              <td>3.09.22 (СБ)<br />20:00-23:00</td>
-              <td class="online">
-                <a href="https://lichess.org/tournament/lfW98Hcz"
-                  >Lichess (online)</a
-                >
-              </td>
-              <td>
-                Режим Crazyhouse
-                <i
-                  >(съеденные фигуры можно выставлять на поле вместо своего
-                  хода)</i
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>Годовщина основания Александринского театра (СПб)</td>
-              <td>10.09.22 (СБ)<br />21:00-23:00</td>
-              <td class="online">
-                <a href="https://lichess.org/tournament/K4vynaOf"
-                  >Lichess (online)</a
-                >
-              </td>
-              <td></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="lichesstv">
-      <div class="container">
-        <div class="row">
-          <h2>Lichess TV</h2>
-        </div>
-        <div class="row">
-          <iframe
-            src="https://lichess.org/tv/frame?theme=blue&bg=light"
-            style="margin: 10px; height: 400px"
-            allowtransparency="true"
-            frameborder="0"
-            >Loading LichessTV...</iframe
-          >
-        </div>
-      </div>
-    </section>
-
-    <section id="problems">
-      <div class="container">
-        <div class="row">
-          <h2>Задачи недели</h2>
-        </div>
-        <div class="row">
-          <p>Подумайте, как в этих ситуациях белые или черные добьются победы или материального превосходства?</p>
-          <p><i>(нажмите на картинку!)</i></p>
-        </div>
-        <div class="row">
-          ----
-        </div>
-      </div>
-    </section>
-
-    <section id="challenge">
-      <div class="container">
-        <div class="row">
-          <h2>Конкурс</h2>
-        </div>
-        <div class="row">
-          <strong id="countdown"></strong>
-        </div>
-      </div>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcgTPpCg-2MRg_3WH3VChhqgnM8es6GZiKnvACDbw5U2zl-w/viewform?embedded=true" width=100% height=600px frameborder="0" marginheight=auto marginwidth=auto>Загрузка формы…</iframe>
-      <script>
-      var countDownDate = new Date("Sep 10, 2022 23:59:59").getTime();
-      var x = setInterval(function() {
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-        if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("countdown").innerHTML = "Конкурс завершен";
-        }
-      }, 1000);
-      </script>
-      </div>
-    </section>
-
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-white text-muted">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Смотрите наши соцсети:</span>
     </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div>
-      <a href="https://vk.com/gnesinchess" class="me-4 link-secondary">
-        <i class="fab fa-vk"></i> @gnesinchess
-      </a>
-      <a href="https://instagram.com/mark_litvak_muz" class="me-4 link-secondary">
-        <i class="fab fa-instagram"></i> @mark_litvak_muz
-      </a>
-      <a href="https://t.me/chess_gnes" class="me-4 link-secondary">
-        <i class="fab fa-telegram"></i> @chess_gnes
-      </a>
-      <a href="https://github.com/marklitvak/gnesinchess_2022" class="me-4 link-secondary">
-        <i class="fab fa-github"></i> Github repo
-      </a>
-    </div>
-    <!-- Right -->
+    <table>
+      <thead>
+        <tr>
+          <th>Название</th>
+          <th>Дата и время</th>
+          <th>Место</th>
+          <th>Особенности</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="past">
+          <td>Открытие сезона 2022-23</td>
+          <td>1.09.22 (ЧТ)<br />20:00-23:00</td>
+          <td>
+            <a href="https://lichess.org/tournament/3dY4Vzb8">Lichess (online)</a>
+          </td>
+          <td></td>
+        </tr>
+        <tr class="past">
+          <td>Crazy BD</td>
+          <td>3.09.22 (СБ)<br />20:00-23:00</td>
+          <td>
+          <a href="https://lichess.org/tournament/lfW98Hcz">Lichess (online)</a>
+          </td>
+          <td>
+            Режим Crazyhouse
+            <i>(съеденные фигуры можно выставлять на поле вместо своего хода)</i>
+          </td>
+        </tr>
+        <tr>
+          <td>Годовщина основания Александринского театра (СПб)</td>
+          <td>10.09.22 (СБ)<br />21:00-23:00</td>
+          <td class="online">
+            <a href="https://lichess.org/tournament/K4vynaOf">Lichess (online)</a>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Очный Blitz 5</td>
+          <td>17.09.22 (СБ)<br>16:00-17:30</td>
+          <td>РАМ Гнесиных (каб. уточняется)</td>
+          <td>Первая в истории очная встреча - чай-кофе-печеньки включены в программу! Приходите поиграть и пообщаться)</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
-  <!-- Section: Social media -->
-
-  <!-- Section: Links  -->
-  <section>
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <h3><i class="fas fa-chess-board"></i> Gnesin Chess</h3>
-          <p>
-            Here you can use rows and columns to organize your footer content. Lorem ipsum
-            dolor sit amet, consectetur adipisicing elit.
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Контакты</h6>
-          <p>
-            <i class="fa fa-home me-3 text-secondary"></i> 
-            <a href="https://yandex.ru/maps/213/moscow/house/povarskaya_ulitsa_30_36s3/Z04Ycw5iSEIAQFtvfXt0dH9iZg==">121069 г. Москва ул. Поварская д. 30-36</a>
-          </p>
-          <p><i class="fa fa-phone me-3 text-secondary"></i> +7 916 3767773</p>
-        </div>
-        <!-- Grid column -->
+  
+  <section id="lichesstv">
+    <div class="row">
+      <div class="text-center">
+        <h2>Lichess TV</h2>
       </div>
-      <!-- Grid row -->
+    </div>
+    <div class="row">
+      <iframe
+      src="https://lichess.org/tv/frame?theme=blue&bg=light"
+      style="margin: 10px; width: 400px; height: 444px;"
+      allowtransparency="true"
+      frameborder="0"
+      >Loading LichessTV...</iframe>
+      <iframe 
+      src="https://lichess.org/training/frame?theme=blue&bg=light" 
+      style="margin: 10px; width: 400px; height: 444px;" 
+      allowtransparency="true" 
+      frameborder="0"
+      >Loading...</iframe>
     </div>
   </section>
-  <!-- Section: Links  -->
-</footer>
-<!-- Footer -->
-  </body>
+  
+  <section id="problems">
+    <div class="row">
+      <div class="text-center">
+        <h2>Задачи недели</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="text-center">
+        <p>Подумайте, как в этих ситуациях белые или черные добьются победы или материального превосходства?</p>
+        <p><i>(нажмите на картинку!)</i></p>
+      </div>
+    </div>
+    <div class="row">
+      ----
+    </div>
+  </section>
+  
+  <section id="challenge">
+    <div class="row">
+      <div class="text-center">
+        <h2>Конкурс</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="text-center">
+        <strong id="countdown"></strong>
+      </div>
+    </div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcgTPpCg-2MRg_3WH3VChhqgnM8es6GZiKnvACDbw5U2zl-w/viewform?embedded=true" width=100% height=600px frameborder="0" marginheight=auto marginwidth=auto>Загрузка формы…</iframe>
+    <script>
+    var countDownDate = new Date("Sep 10, 2022 23:59:59").getTime();
+    var x = setInterval(function() {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "Конкурс завершен";
+      }
+    }, 1000);
+    </script>
+  </section>
+</body>
 </html>
