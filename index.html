@@ -11,7 +11,15 @@
   <meta name="author" content="Марк Литвак">
   <title>Gnesin Chess</title>
 </head>
+
 <body>
+  <div id="home" class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="./blog.html">Блог</a>
+    <a href="#contact">Контакты</a>
+    <a href="./faq.html">ЧАВО</a>
+  </div>
+
   <section id="schedule">
     <div class="row">
       <div class="text-center">
@@ -77,13 +85,13 @@
       style="margin: 10px; width: 400px; height: 444px;"
       allowtransparency="true"
       frameborder="0"
-      >Loading LichessTV...</iframe>
+      >Загрузка...</iframe>
       <iframe 
       src="https://lichess.org/training/frame?theme=blue&bg=light" 
       style="margin: 10px; width: 400px; height: 444px;" 
       allowtransparency="true" 
       frameborder="0"
-      >Loading...</iframe>
+      >Загрузка...</iframe>
     </div>
   </section>
   
@@ -125,7 +133,7 @@
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+      document.getElementById("countdown").innerHTML = days + "д " + hours + ":" + minutes + ":" + seconds;
       if (distance < 0) {
         clearInterval(x);
         document.getElementById("countdown").innerHTML = "Конкурс завершен";

@@ -2,7 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 24px;
-    color: #666;
+    color: #444;
     background-color: #fff;
 }
 
@@ -71,4 +71,35 @@ tbody > .past {
 
 div .text-center {
     text-align: center;
+}
+
+#lichesstv > .row {
+    display: flex;
+    justify-content: center;
+}
+
+/* NAV CSS */
+.topnav {
+    background-color: #1999ee;
+    overflow: hidden;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #90d3ff;
+    color: #1999ee;
+}
+
+.topnav a.active {
+    background-color: #fff;
+    color: #1999ee;
 }
