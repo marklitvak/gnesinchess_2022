@@ -1,0 +1,177 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #555;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+section{
+    padding: 0 15px;
+    margin-top: 80px;
+}
+
+#header {
+    text-align: center;
+}
+  
+@media (min-width: 575.98px){
+    section {
+      padding: 0 calc(50% - 270px);
+    }
+}
+  
+@media (min-width: 767.98px){
+    section {
+      padding: 0 calc(50vw - 360px);
+    }
+}
+  
+@media (min-width: 991.98px) {
+    section {
+      padding: 0 calc(50vw - 480px);
+    }
+}
+  
+@media (min-width: 1199.98px){
+    section {
+      padding: 0 calc(50vw - 590px);
+    }
+}
+
+th, td {
+    border: 1px solid;
+    border-color: black;
+    padding: 5px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+tr > .online {
+    background-color: greenyellow;
+}
+
+tbody > .past {
+    background-color: silver;
+}
+
+div .text-center {
+    text-align: center;
+}
+
+#lichesstv > .row {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #1999ee;
+}
+
+.heading {
+    padding-bottom: 30px;
+}
+
+/* NAV CSS */
+.topnav {
+    background-color: #1999ee;
+    overflow: hidden;
+    width: 100%;
+}
+
+.topnav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #90d3ff;
+    color: #1999ee;
+}
+
+.topnav a.active {
+    background-color: #fff;
+    color: #1999ee;
+}
+
+.problem {
+    width: 400px;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+/* Contacts CSS */
+ul.address {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.address a {
+    font-weight: 700;
+}
+
+/* Blog CSS */
+.post {
+    width: 400px;
+}
+
+.post-icon {
+    color: #fff;
+    background-color: #1999ee;
+    position: inherit;
+    top:10px;
+    right:10px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius:4px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.entry-content {
+    text-align: justify;
+}
+
+#faq {
+    text-align: justify;
+}
+
+.chessfig {
+    font-size: 20px;
+}
+
+section#problems{
+    display: none;
+}
