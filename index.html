@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
   <link rel="shortcut icon" href="images/logohead.ico">
-  <script defer="" src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
   <meta name="description" content="Шахматный клуб GnesinChess. Еженедельные турниры (онлайн и оффлайн), интересные статьи, партии мастеров в реальном времени и задачи.">
   <meta name="author" content="Марк Литвак">
   <title>Gnesin Chess</title>
@@ -14,15 +14,20 @@
 
 <body>
   <div id="home" class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="./blog.html">Блог</a>
-    <a href="#contact">Контакты</a>
-    <a href="./faq.html">ЧАВО</a>
+    <a class="active" href="#home">Главная</a>
+    <a href="./blog.html#home" target="_blank">Блог</a>
+    <a href="#contacts">Контакты</a>
+    <a href="./faq.html#home" target="_blank">ЧАВО</a>
   </div>
+
+  <section id="header">
+    <h1><a>Gnesin|Chess</a></h1>
+    <p>Шахматный клуб Студсовета РАМ им. Гнесиных</p>
+  </section>
 
   <section id="schedule">
     <div class="row">
-      <div class="text-center">
+      <div class="heading text-center">
         <h2>Расписание игр</h2>
       </div>
     </div>
@@ -75,7 +80,7 @@
   
   <section id="lichesstv">
     <div class="row">
-      <div class="text-center">
+      <div class="heading text-center">
         <h2>Lichess TV</h2>
       </div>
     </div>
@@ -97,7 +102,7 @@
   
   <section id="problems">
     <div class="row">
-      <div class="text-center">
+      <div class="heading text-center">
         <h2>Задачи недели</h2>
       </div>
     </div>
@@ -108,13 +113,27 @@
       </div>
     </div>
     <div class="row">
-      ----
+      <div class="problem">
+        <img class="img-responsive" src="./images/problems/1.jpg" alt="">
+      </div>
+      <div class="problem">
+        <img class="img-responsive" src="./images/problems/2.jpg" alt="">
+      </div>
+      <div class="problem">
+        <img class="img-responsive" src="./images/problems/3.jpg" alt="">
+      </div>
+      <div class="problem">
+        <img class="img-responsive" src="./images/problems/4.jpg" alt="">
+      </div>
+      <div class="problem">
+        <img class="img-responsive" src="./images/problems/5.jpg" alt="">
+      </div>
     </div>
   </section>
   
   <section id="challenge">
     <div class="row">
-      <div class="text-center">
+      <div class="heading text-center">
         <h2>Конкурс</h2>
       </div>
     </div>
@@ -140,6 +159,34 @@
       }
     }, 1000);
     </script>
+  </section>
+
+  <hr>
+  <section id="contacts">
+    <div class="row">
+      <div class="heading text-center">
+        <h2>Контакты</h2>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="address">
+        <li>
+          <i class="fa fa-phone"></i>
+          <a href="tel:+79163767773"> +7 916 376 7773</a>
+        </li>
+        <li>
+          <i class="fa fa-vk"></i>
+          <a href="https://vk.com/m_litvak" target="_blank"> @m_litvak</a>
+        </li>
+        <li>
+          <i class="fa fa-map-marker"></i>
+          <a href="https://yandex.ru/maps/213/moscow/house/povarskaya_ulitsa_30_36s3/Z04Ycw5iSEIAQFtvfXt0dH9iZg==" target="_blank"> 121069 г. Москва ул. Поварская д. 30-36</a>
+        </li>
+      </ul>
+
+      <div class="text-center">
+        <p>&copy; Mark Litvak 2022</p>
+      </div>
   </section>
 </body>
 </html>
