@@ -69,12 +69,20 @@ th, td {
     font-size: 12px;
 }
 
-tr > .online {
+tbody .online {
     background-color: greenyellow;
 }
 
-tbody > .past {
+tbody .past {
     background-color: silver;
+}
+
+tbody .special {
+    background-color: #eb8634;
+}
+
+tbody ul {
+    color: #555;
 }
 
 div .text-center {
