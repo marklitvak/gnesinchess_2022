@@ -37,12 +37,9 @@ section{
     text-align: center;
 }
   
-@media (min-width: 275.98px){
+@media (min-width: 575.98px){
     section {
-      padding: 0 calc(50% - 170px);
-    }
-    table {
-      transform: scale(0.7);
+      padding: 0 calc(50% - 270px);
     }
 }
   
