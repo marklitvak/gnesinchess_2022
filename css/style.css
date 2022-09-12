@@ -63,6 +63,8 @@ section{
 
 section#schedule {
     background-image: url("/images/bg/prokofiev_oistrakh_gilels.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.5;
 }
 
 th, td {
