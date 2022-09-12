@@ -39,7 +39,7 @@ section{
   
 @media (min-width: 575.98px){
     section {
-      padding: 0 calc(50% - 270px);
+      padding: 0 calc(50vw - 270px);
     }
 }
   
@@ -90,8 +90,8 @@ div .text-center {
     text-align: center;
 }
 
-#lichesstv > .row {
-    display: flex;
+#lichesstv iframe {
+    display: inline-block;
     justify-content: center;
 }
 
@@ -108,7 +108,7 @@ a {
 .topnav {
     background-color: #1999ee;
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
 }
 
 .topnav a {
