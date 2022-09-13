@@ -22,7 +22,7 @@ body {
   
   &::before {
     content: "";
-    position: absolute;
+    position: relative;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -37,7 +37,6 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   position: relative;
-  color: #333;
   font-size: 40px;
 }
 
