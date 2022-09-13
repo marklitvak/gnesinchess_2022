@@ -6,7 +6,7 @@ body {
     background-color: transparent;
 }
 
-.header, .header::before, .header::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
