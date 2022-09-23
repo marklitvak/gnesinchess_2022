@@ -157,8 +157,19 @@ ul.address {
 }
 
 /* Blog CSS */
+
 .post {
-    width: 400px;
+    width: 360px;
+    float: left;
+    margin: 10px;
+}
+
+div.post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: auto;
+    column-gap: auto;
 }
 
 .post-icon {
@@ -189,4 +200,9 @@ ul.address {
 
 section#problems{
     display: none;
+}
+
+
+section#contacts {
+    display: block;
 }
