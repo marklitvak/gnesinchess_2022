@@ -165,11 +165,11 @@ ul.address {
 }
 
 div.post {
-    display: flex;
+    display: inline;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: auto;
-    column-gap: auto;
+    row-gap: 10px;
+    column-gap: 10px;
 }
 
 .post-icon {
@@ -183,7 +183,7 @@ div.post {
     line-height: 30px;
     border-radius:4px;
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .entry-content {
@@ -204,5 +204,6 @@ section#problems{
 
 
 section#contacts {
-    display: block;
+    display: flexbox;
+    
 }
